@@ -7,6 +7,6 @@ foo(a)
 try:
     print ('Привет!',sys.argv[1])
 except:
-    print('Извините ошибка')
+    print('Извините ошибка111')
 	
 input()
