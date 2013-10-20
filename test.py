@@ -9,4 +9,21 @@ try:
 except:
     print('Извините ошибка111')
 	
+class Parent:#класс родитель
+		def setdata(self,data):
+			self.data = data
+		def show(self):
+			print (self.data)
+
+class Child(Parent):# Класс ребёнок
+		def show(self):
+			print (self.data + "| это из Child")
+		def show_alt(self):
+			str = str(len(self.data))
+			print (self.data)
+
+myexp1 = Child()	
+
+myexp1.setdata("Привет, это мой первый объект")
+myexp1.show() 		
 input()
